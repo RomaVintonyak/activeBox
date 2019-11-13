@@ -116,6 +116,7 @@ p {
   color: #ffffff;
   font-family: inherit;
   border: 0;
+  text-align: center;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
@@ -124,12 +125,16 @@ p {
   border-radius: 2px;
   transition: background 0.1s linear;
 }
+.btn--long{
+  min-width: 280px;
+}
 .btn--red {
   background-color: #e84545;
 }
 .btn--red:hover {
   background-color: #dd3434;
 }
+
 /*features
 =================*/
 .features {
@@ -275,5 +280,67 @@ p {
   fill: #c6cacc;
   transition: fill 0.1s linear;
 }
-/*clients
+/*reviews
+=================*/
+.reviews {
+  overflow: hidden;
+  background-color: #53354a;
+}
+.rewiews_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews_photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.reviews_img{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.reviews_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  width: 50%;
+}
+.reviews_text {
+  margin-bottom: 25px;
+  font-family: 'Cardo', serif;
+  font-size: 36px;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.rewies_autor {
+  font-weight:700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*dowload
+=================*/
+.dowload{
+  margin: 90px 0;
+  text-align: center;
+}
+.dowload_title{
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+.dowload_text{
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+/*footer
 =================*/
