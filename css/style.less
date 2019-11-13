@@ -257,6 +257,9 @@ p {
 .social {
   display: flex;
 }
+.social--footer{
+  justify-content: center;
+}
 .social_link {
   margin-right: 4px;
   display: flex;
@@ -274,11 +277,23 @@ p {
 .social_link:hover .social_icon {
   fill: #e84545;
 }
+.social--footer .social_link{
+  background: transparent;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 2px;
+}
+.social--footer .social_link:hover{
+  background-color: #ffffff;
+}
 .social_icon {
   display: block;
   height: 18px;
   fill: #c6cacc;
   transition: fill 0.1s linear;
+}
+.social--footer .social_icon{
+  fill: #ffffff;
 }
 /*reviews
 =================*/
@@ -344,3 +359,53 @@ p {
 }
 /*footer
 =================*/
+.footer{
+  background-color: #3a3e64;
+}
+.footer_iner{
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_block{
+  width: 33.33333%;
+  padding: 0 15px;
+  text-align: center;
+ }
+.footer_title{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer_addres{
+  color: rgba(255, 255, 255, .5);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer_text{
+  color: rgba(255, 255, 255, .5);
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*copiright
+=================*/
+.copyright{
+  background-color: #313454;
+  padding: 20px 0;
+}
+.copyright_text{
+  text-align: center;
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.5;
+}
+
+.copyright_text span{
+  color: #ffffff;
+}
+.copyright_text i{
+  color: #e84545;
+}
