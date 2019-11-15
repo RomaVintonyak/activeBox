@@ -312,9 +312,14 @@ p {
   overflow: hidden;
   background-color: #53354a;
 }
+.reviewsSlider{
+  height: 500px;
+  overflow: hidden;
+}
 .rewiews_item {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .reviews_photo {
   width: 50%;
@@ -348,7 +353,42 @@ p {
   font-size: 13px;
   text-transform: uppercase;
   color: #ffffff;
+  ;
 }
+/*arows for slider*/
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.slick-dots li{
+  margin: 0 5px;
+}
+.slick-dots button{
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: .5;
+  border: 0;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+.slick-dots button:focus{
+  outline: 0;
+}
+.slick-dots .slick-active button{
+  opacity: 1;
+  }
 /*dowload
 =================*/
 .dowload {
@@ -465,6 +505,19 @@ p {
   /*nav*/
   .nav {
     display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    background-color: #31344e;
+  }
+  .nav.show{
+    display: flex;
+  }
+  .nav_link{
+    padding: 9px 15px;
   }
   /*burger*/
   .burger_menu {

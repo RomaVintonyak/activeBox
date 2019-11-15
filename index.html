@@ -15,6 +15,12 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <!--slick css for slider style-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>ActiveBox</title>
   </head>
   <body>
@@ -56,14 +62,14 @@
           <div class="header_logo">
             <img src="img/logo/ActiveBox-logo.png" alt="activebox" />
           </div>
-          <nav class="nav">
-            <a href="#" class="nav_link">Features</a>
-            <a href="#" class="nav_link">Works</a>
-            <a href="#" class="nav_link">Our team</a>
-            <a href="#" class="nav_link">Testimonials</a>
-            <a href="#" class="nav_link">Download</a>
+          <nav class="nav" id="nav">
+            <a href="#" class="nav_link" data-scroll="#features">Features</a>
+            <a href="#" class="nav_link" data-scroll="#works">Works</a>
+            <a href="#" class="nav_link" data-scroll="#team">Our team</a>
+            <a href="#" class="nav_link" data-scroll="#reviews">Testimonials</a>
+            <a href="#" class="nav_link" data-scroll="#dowload">Download</a>
           </nav>
-          <button class="burger_menu" type="button">
+          <button class="burger_menu" type="button" id="navToggle">
             <span class="burger_icon">Menu</span>
           </button>
         </div>
@@ -87,7 +93,7 @@
       </div>
     </section>
     <!--features-->
-    <section>
+    <section id="features">
       <div class="container">
         <div class="features">
           <div class="features_item">
@@ -174,7 +180,7 @@
       <!--/container-->
     </section>
     <!--section works-->
-    <section>
+    <section id="works">
       <div class="works">
         <div class="works_item">
           <img class="works_img" src="img/works/1.jpg" alt="activworks" />
@@ -236,7 +242,7 @@
       <!--./works-->
     </section>
     <!--team-->
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="team_iner">
           <div class="team_item">
@@ -373,23 +379,47 @@
       <!--./container-->
     </section>
     <!--reviews-->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
-        <div class="rewiews_item">
-          <div class="reviews_photo">
-            <img
-              class="reviews_img"
-              src="img/clients/Layer 19.jpg"
-              alt="activeboxReviews"
-            />
-          </div>
-          <div class="reviews_content">
-            <div class="reviews_text">
-              “Integer posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Donec sed odio dui. Aenean eu leo quam...”
+        <div id="reviewsSlider" class="reviewsSlider">
+          <div>
+            <div class="rewiews_item">
+              <div class="reviews_photo">
+                <img
+                  class="reviews_img"
+                  src="img/clients/Layer 19.jpg"
+                  alt="activeboxReviews"
+                />
+              </div>
+              <div class="reviews_content">
+                <div class="reviews_text">
+                  “Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                </div>
+                <div class="rewies_autor">
+                  Susan Sims, Interaction Designer at XYZ
+                </div>
+              </div>
             </div>
-            <div class="rewies_autor">
-              Susan Sims, Interaction Designer at XYZ
+          </div>
+          <div>
+            <div class="rewiews_item">
+              <div class="reviews_photo">
+                <img
+                  class="reviews_img"
+                  src="img/clients/Layer 19.jpg"
+                  alt="activeboxReviews"
+                />
+              </div>
+              <div class="reviews_content">
+                <div class="reviews_text">
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas recusandae quam enim delectus quos autem....”
+                </div>
+                <div class="rewies_autor">
+                  Roman Sims, Web Developer at XYZ
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -397,7 +427,7 @@
       <!--./container-->
     </section>
     <!--dowload-->
-    <section class="dowload">
+    <section class="dowload" id="dowload">
       <div class="container">
         <h3 class="dowload_title">
           Are You Ready to Start? Download Now For Free!
@@ -456,7 +486,10 @@
         <div class="container">
           <div class="copyright_text">
             <div>Copyright &copy; 2018 ActiveBox. All Rights Reserved</div>
-            <div>Made with Y <i class="fas fa-heart"></i><span> by Roma Developer</span></div>
+            <div>
+              Made with Y <i class="fas fa-heart"></i
+              ><span> by Roma Developer</span>
+            </div>
           </div>
         </div>
       </div>
@@ -464,6 +497,11 @@
     <!--script-->
     <!--jquery-->
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <!--slick js slider-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!--main script-->
     <script type="text/javascript" src="js/main.js"></script>
   </body>
